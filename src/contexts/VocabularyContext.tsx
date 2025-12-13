@@ -9,8 +9,8 @@ interface VocabularyContextType {
 
 const VocabularyContext = createContext<VocabularyContextType | undefined>(undefined);
 
-// Force cache invalidation on deployment
-const BUILD_VERSION = "2025-01-16-v1-force-refresh";
+// Force cache invalidation on deployment - CHANGE THIS STRING TO FORCE UPDATE
+const BUILD_VERSION = "vocab-60-runtime-2025-01-16-v2";
 
 export const VocabularyProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [words, setWords] = useState<Word[]>([]);
@@ -34,9 +34,9 @@ export const VocabularyProvider: React.FC<{ children: ReactNode }> = ({ children
         Object.keys(data).forEach((lvlKey) => {
            const level = lvlKey as Level;
            const list = data[lvlKey];
-           list.forEach((item: any, index: number) => {
+           list.forEach((item: any) => {
              allWords.push({
-               id: `${level}-${index}`,
+               id: item.id,
                french: item.word,
                chinese: item.meaning_zh,
                ipa: item.ipa,
