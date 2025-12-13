@@ -64,6 +64,7 @@ export const VOCABULARY_DATA: Word[] = [
   { id: 'a1_58', french: 'Semaine', chinese: '周', ipa: '/sə.mɛn/', level: Level.A1, example: { french: 'La semaine prochaine.', chinese: '下周。' } },
   { id: 'a1_59', french: 'Mois', chinese: '月', ipa: '/mwa/', level: Level.A1, example: { french: 'Le mois de mai.', chinese: '五月份。' } },
   { id: 'a1_60', french: 'Année', chinese: '年', ipa: '/a.ne/', level: Level.A1, example: { french: 'Bonne année !', chinese: '新年快乐！' } },
+  { id: 'a1_61', french: 'Heure', chinese: '小时/时间', ipa: '/œʁ/', level: Level.A1, example: { french: 'Quelle heure est-il ?', chinese: '几点了？' } },
 
   // ==========================================
   // Level A2 (60 Words)

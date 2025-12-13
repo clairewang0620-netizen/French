@@ -56,7 +56,7 @@ class AudioService {
     const utterance = new SpeechSynthesisUtterance(text);
     
     // 3. Explicit Configuration
-    // Mandatory language setting
+    // Mandatory language setting to force engine to French even if voice object is missing
     utterance.lang = 'fr-FR'; 
     utterance.rate = rate;
     utterance.pitch = 1.0;
