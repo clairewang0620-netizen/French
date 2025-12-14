@@ -1,15 +1,14 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home } from 'lucide-react';
+import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home, RefreshCw } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 每次部署时修改这里的日期，或者构建时会自动更新，
-// 但为了确保你能看到变化，我们先硬编码一个显眼的版本号
-const DEPLOY_VERSION = "2025.01.16 - V5.0 (Force Update)";
+// 修改此版本号以在部署后直观验证
+const DEPLOY_VERSION = "v6.0-FINAL"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
@@ -27,13 +26,24 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleForceRefresh = () => {
+    if (window.confirm("确定要清除所有缓存并强制刷新吗？")) {
+      // 1. 清除 LocalStorage
+      localStorage.clear();
+      // 2. 清除 SessionStorage
+      sessionStorage.clear();
+      // 3. 强制从服务器重新加载 (true 参数)
+      window.location.reload();
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
       <header className="bg-french-blue text-white shadow-md sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold flex items-center gap-2">
-            🇫🇷 法语大师
+            🇫🇷 法语大师 <span className="text-xs bg-red-500 px-1 rounded opacity-80">{DEPLOY_VERSION}</span>
           </Link>
           
           <button onClick={toggleMenu} className="md:hidden p-2 hover:bg-blue-700 rounded">
@@ -78,10 +88,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+      {/* Footer & Debug Control */}
+      <footer className="bg-gray-800 text-gray-400 py-8 text-center text-sm">
         <p>© 2024 法语大师 FrenchMaster.</p>
-        <p className="text-xs text-gray-600 mt-1">Build: {DEPLOY_VERSION}</p>
+        
+        {/* 强制刷新区域 - 只有在遇到缓存问题时才需要用这个 */}
+        <div className="mt-6 p-4 bg-gray-900 mx-auto max-w-xs rounded-lg border border-gray-700">
+          <p className="text-xs text-gray-500 mb-2">遇到内容未更新？</p>
+          <button 
+            onClick={handleForceRefresh}
+            className="flex items-center justify-center gap-2 w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded text-xs font-bold transition-colors"
+          >
+            <RefreshCw size={14} />
+            点我强制清除缓存并刷新
+          </button>
+          <p className="text-[10px] text-gray-600 mt-2 font-mono">Current Build: {DEPLOY_VERSION}</p>
+        </div>
       </footer>
     </div>
   );
