@@ -1,4 +1,5 @@
 
+/* FrenchMaster Vocabulary Data - Consolidated */
 import { Word, Level } from '../types';
 
 export const VOCABULARY_DATA: Word[] = [

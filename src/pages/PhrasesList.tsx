@@ -1,4 +1,5 @@
 
+/* FrenchMaster PhrasesList - Using Standard Data */
 import React from 'react';
 import AudioButton from '../components/AudioButton';
 import { PHRASES_DATA } from '../data/phrases';

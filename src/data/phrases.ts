@@ -1,4 +1,5 @@
 
+/* FrenchMaster Phrases Data - Consolidated */
 import { Phrase } from '../types';
 
 export const PHRASES_DATA: Phrase[] = [

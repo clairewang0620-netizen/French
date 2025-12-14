@@ -1,4 +1,5 @@
 
+/* FrenchMaster Grammar Data - Consolidated */
 import { GrammarItem, Level } from '../types';
 
 export const GRAMMAR_DATA: GrammarItem[] = [

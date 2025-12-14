@@ -1,4 +1,5 @@
 
+/* FrenchMaster HomePage - Fixed Component */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Book, MessageCircle, GraduationCap, BookOpen } from 'lucide-react';

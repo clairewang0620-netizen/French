@@ -1,11 +1,12 @@
 
+/* FrenchMaster App Entry - Updated Imports */
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { MistakeProvider } from './contexts/MistakeContext';
 
 // Pages
-import HomePage from './pages/HomePage'; // Using HomePage explicitly to fix build case-sensitivity
+import HomePage from './pages/HomePage'; // Using HomePage to avoid case-sensitivity build errors
 import VocabularyList from './pages/VocabularyList';
 import Flashcard from './pages/Flashcard';
 import GrammarList from './pages/GrammarList';

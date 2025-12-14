@@ -1,4 +1,5 @@
 
+/* FrenchMaster VocabularyList - Using Standard Data */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { VOCABULARY_DATA } from '../data/vocabulary';
