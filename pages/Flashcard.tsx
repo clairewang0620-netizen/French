@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { VOCABULARY_DATA } from '../data/vocabulary';
+import { VOCABULARY_DATA } from '../data/vocabulary_new';
 import AudioButton from '../components/AudioButton';
 import { ArrowLeft } from 'lucide-react';
 

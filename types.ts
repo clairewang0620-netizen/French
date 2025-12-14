@@ -1,3 +1,4 @@
+
 export enum Level {
   A1 = 'A1',
   A2 = 'A2',
@@ -18,15 +19,20 @@ export interface Word {
   };
 }
 
+export interface GrammarContentRow {
+  subject: string;
+  conjugation: string;
+  rule?: string;
+  example_fr: string;
+  example_zh: string;
+}
+
 export interface GrammarItem {
   id: string;
   title: string;
   level: Level;
-  content: string; // Markdown-like or plain text
-  examples: Array<{
-    french: string;
-    chinese: string;
-  }>;
+  description?: string;
+  rows: GrammarContentRow[];
 }
 
 export interface Phrase {

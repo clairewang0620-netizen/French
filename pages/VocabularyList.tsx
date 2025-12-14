@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { VOCABULARY_DATA } from '../data/vocabulary';
+import { VOCABULARY_DATA } from '../data/vocabulary_new';
 import { Level } from '../types';
 import AudioButton from '../components/AudioButton';
 
