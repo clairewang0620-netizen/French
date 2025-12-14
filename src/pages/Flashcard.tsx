@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-// FIX: Point to the full dataset
+// ✅ 修正：去掉 _new，引用包含所有单词的完整文件
 import { VOCABULARY_DATA } from '../data/vocabulary';
 import AudioButton from '../components/AudioButton';
 import { ArrowLeft } from 'lucide-react';

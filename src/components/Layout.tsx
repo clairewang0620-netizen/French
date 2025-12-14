@@ -7,8 +7,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 升级版本号，用于视觉验证
-const DEPLOY_VERSION = "v9.0-FINAL"; 
+// 🚀 v10.0 FIXED
+const DEPLOY_VERSION = "v10.0-FIXED"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();

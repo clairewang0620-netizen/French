@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Level } from '../types';
-// FIX: Point to the full dataset
+// ✅ 修正：去掉 _new，引用完整语法文件
 import { GRAMMAR_DATA } from '../data/grammar';
 import AudioButton from '../components/AudioButton';
 
@@ -14,7 +14,7 @@ const GrammarList: React.FC = () => {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
          <h2 className="text-2xl font-bold text-gray-800">基础语法</h2>
-         <span className="text-xs text-gray-400 font-mono">v9.0 Live</span>
+         <span className="text-xs text-gray-400 font-mono">v10.0 Live</span>
       </div>
       
       {/* Level Tabs */}
