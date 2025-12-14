@@ -19,27 +19,26 @@ export interface Word {
   };
 }
 
-// Updated Grammar Structure
 export interface GrammarContentRow {
-  subject: string;      // 主语 (e.g., "Je", " 定冠词")
-  conjugation: string;  // 变位/形式 (e.g., "suis", "le/la/les")
-  rule?: string;        // 规则说明 (可选)
-  example_fr: string;   // 法语例句
-  example_zh: string;   // 中文释义
+  subject: string;
+  conjugation: string;
+  rule?: string;
+  example_fr: string;
+  example_zh: string;
 }
 
 export interface GrammarItem {
   id: string;
-  topic: string;        // 大标题 (e.g., "动词 être")
-  subtopic: string;     // 子标题 (e.g., "现在时变位")
-  content: GrammarContentRow[]; // 内容列表
+  topic: string;
+  subtopic: string;
+  content: GrammarContentRow[];
 }
 
 export interface Phrase {
   id: string;
   french: string;
   chinese: string;
-  ipa?: string;
+  ipa?: string; // Added optional IPA field
   category?: string;
 }
 

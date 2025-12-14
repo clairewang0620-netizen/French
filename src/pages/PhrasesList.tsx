@@ -1,14 +1,15 @@
+
 import React from 'react';
-import { PHRASES_DATA } from '../data/phrases';
 import AudioButton from '../components/AudioButton';
+import { PHRASES_DATA } from '../data/phrases';
 
 const PhrasesList: React.FC = () => {
   return (
     <div className="space-y-6 pb-10">
       <div className="bg-white p-6 rounded-xl shadow-sm border border-green-100">
-        <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选 (50+)</h2>
+        <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选 ({PHRASES_DATA.length}句)</h2>
         <p className="text-gray-600 text-sm">
-          精选高频实用句子，涵盖自我介绍、旅行、餐饮等场景。点击喇叭图标听标准发音。
+          精选高频实用句子，涵盖问候、旅行、餐饮、紧急情况等10大场景。点击喇叭图标听标准发音。
         </p>
       </div>
 
