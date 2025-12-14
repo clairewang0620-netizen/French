@@ -1,20 +1,20 @@
 
-/* Fix: 2025-12-14 06:10 - Updated App Imports */
+/* Fix: 2025-12-14 06:15 - Resolving QuizList Error by using QuizHub */
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { MistakeProvider } from './contexts/MistakeContext';
 
-// Pages - Using new names to fix build errors
-import Landing from './pages/Landing'; 
+// Pages - Using NEW NAMES to strictly avoid old file references
+import LandingPage from './pages/LandingPage'; 
 import VocabularyList from './pages/VocabularyList';
 import Flashcard from './pages/Flashcard';
 import GrammarList from './pages/GrammarList';
 import PhrasesList from './pages/PhrasesList';
 import ReadingList from './pages/ReadingList';
 import ReadingDetail from './pages/ReadingDetail';
-import QuizIndex from './pages/QuizIndex'; 
-import QuizSession from './pages/QuizSession'; 
+import QuizHub from './pages/QuizHub';  // Formerly QuizList
+import QuizExam from './pages/QuizExam'; // Formerly QuizDetail
 import MistakeBook from './pages/MistakeBook';
 
 const App: React.FC = () => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <HashRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/" element={<LandingPage />} />
             
             {/* Vocabulary */}
             <Route path="/vocabulary" element={<VocabularyList />} />
@@ -39,9 +39,9 @@ const App: React.FC = () => {
             <Route path="/reading" element={<ReadingList />} />
             <Route path="/reading/:id" element={<ReadingDetail />} />
             
-            {/* Quiz */}
-            <Route path="/quiz" element={<QuizIndex />} />
-            <Route path="/quiz/:level" element={<QuizSession />} />
+            {/* Quiz - Note the component names are updated */}
+            <Route path="/quiz" element={<QuizHub />} />
+            <Route path="/quiz/:level" element={<QuizExam />} />
             
             {/* Mistakes */}
             <Route path="/mistakes" element={<MistakeBook />} />

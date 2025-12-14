@@ -1,5 +1,5 @@
 
-/* Fix: 2025-12-14 06:10 - Correct Import */
+/* Fix: 2025-12-14 06:15 - Correct Import */
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { VOCABULARY_DATA } from '../data/vocabulary';
