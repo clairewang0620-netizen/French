@@ -13,7 +13,7 @@ const GrammarList: React.FC = () => {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
          <h2 className="text-2xl font-bold text-gray-800">基础语法</h2>
-         <span className="text-xs text-gray-400 font-mono">v14.0 Full</span>
+         <span className="text-xs text-gray-400 font-mono">Static Load</span>
       </div>
       
       {/* Level Tabs */}
