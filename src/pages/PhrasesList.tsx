@@ -7,7 +7,12 @@ const PhrasesList: React.FC = () => {
   return (
     <div className="space-y-6 pb-10">
       <div className="bg-white p-6 rounded-xl shadow-sm border border-green-100">
-        <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选 ({PHRASES_DATA.length}句)</h2>
+        <div className="flex justify-between items-start">
+            <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选</h2>
+            <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded font-bold">
+              共 {PHRASES_DATA.length} 句 (v2024.1)
+            </span>
+        </div>
         <p className="text-gray-600 text-sm">
           精选高频实用句子，涵盖问候、旅行、餐饮、紧急情况等10大场景。点击喇叭图标听标准发音。
         </p>
@@ -21,7 +26,6 @@ const PhrasesList: React.FC = () => {
                <div className="flex-1">
                  <div className="flex flex-wrap items-baseline gap-2 mb-1">
                     <p className="text-lg font-bold text-gray-800">{phrase.french}</p>
-                    {phrase.ipa && <span className="text-xs text-gray-400 font-mono bg-gray-50 px-1 rounded">{phrase.ipa}</span>}
                  </div>
                  <p className="text-gray-500">{phrase.chinese}</p>
                </div>
