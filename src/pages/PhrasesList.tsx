@@ -1,7 +1,7 @@
 
 import React from 'react';
 import AudioButton from '../components/AudioButton';
-// ✅ 修正：去掉 _new，引用完整口语文件
+// FIX: Import from the full dataset, not the _new test file
 import { PHRASES_DATA } from '../data/phrases';
 
 const PhrasesList: React.FC = () => {
@@ -11,7 +11,7 @@ const PhrasesList: React.FC = () => {
         <div className="flex justify-between items-start">
             <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选</h2>
             <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded font-bold">
-              共 {PHRASES_DATA.length} 句 (v10.0)
+              共 {PHRASES_DATA.length} 句 (v11.0 Live)
             </span>
         </div>
         <p className="text-gray-600 text-sm">

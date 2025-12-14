@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-// ✅ 修正：去掉 _new，引用包含所有单词的完整文件
+// FIX: Import from the full dataset, not the _new test file
 import { VOCABULARY_DATA } from '../data/vocabulary';
 import AudioButton from '../components/AudioButton';
 import { ArrowLeft } from 'lucide-react';
