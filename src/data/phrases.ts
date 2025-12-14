@@ -2,7 +2,7 @@
 import { Phrase } from '../types';
 
 export const PHRASES_DATA: Phrase[] = [
-  // --- 原有数据 (Original 1-10) ---
+  // 1. 基础表达
   { id: 'p1', french: "Bonjour, ça va ?", chinese: "你好，最近好吗？" },
   { id: 'p2', french: "Je voudrais un café, s'il vous plaît.", chinese: "我想要一杯咖啡，谢谢。" },
   { id: 'p3', french: "Où sont les toilettes ?", chinese: "洗手间在哪里？" },
@@ -13,9 +13,6 @@ export const PHRASES_DATA: Phrase[] = [
   { id: 'p8', french: "À tout à l'heure.", chinese: "一会儿见。" },
   { id: 'p9', french: "C'est délicieux !", chinese: "这很好吃！" },
   { id: 'p10', french: "Excusez-moi.", chinese: "打扰了/抱歉。" },
-
-  // --- 新增数据 (New 11-110) ---
-  // 1. 基础表达
   { id: 'p11', french: "Oui, s'il vous plaît.", chinese: "是的，谢谢。" },
   { id: 'p12', french: "Non, merci.", chinese: "不用了，谢谢。" },
   { id: 'p13', french: "De rien.", chinese: "不客气。" },

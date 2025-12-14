@@ -7,8 +7,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 🚀 v15.5 FINAL CLEANUP - Fixed Data & Paths
-const DEPLOY_VERSION = "v15.5-FINAL-CLEANUP"; 
+// 🚀 v15.6 FINAL FIX - Consolidate Data Files
+const DEPLOY_VERSION = "v15.6-DATA-CONSOLIDATED"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
@@ -32,7 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header className="bg-french-blue text-white shadow-md sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold flex items-center gap-2">
-            🇫🇷 法语大师 <span className="text-xs bg-indigo-500 text-white px-2 py-0.5 rounded font-bold shadow-sm">{DEPLOY_VERSION}</span>
+            🇫🇷 法语大师 <span className="text-xs bg-rose-500 text-white px-2 py-0.5 rounded font-bold shadow-sm">{DEPLOY_VERSION}</span>
           </Link>
           
           <button onClick={toggleMenu} className="md:hidden p-2 hover:bg-blue-700 rounded">
