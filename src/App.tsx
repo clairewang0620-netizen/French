@@ -1,20 +1,20 @@
 
-/* FrenchMaster App Entry - v16.0 Fix Paths */
+/* Fix: 2025-12-14 06:10 - Updated App Imports */
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { MistakeProvider } from './contexts/MistakeContext';
 
-// Pages - Renamed to avoid git case sensitivity issues
-import Landing from './pages/Landing'; // Was Home
+// Pages - Using new names to fix build errors
+import Landing from './pages/Landing'; 
 import VocabularyList from './pages/VocabularyList';
 import Flashcard from './pages/Flashcard';
 import GrammarList from './pages/GrammarList';
 import PhrasesList from './pages/PhrasesList';
 import ReadingList from './pages/ReadingList';
 import ReadingDetail from './pages/ReadingDetail';
-import QuizIndex from './pages/QuizIndex'; // Was QuizList
-import QuizSession from './pages/QuizSession'; // Was QuizDetail
+import QuizIndex from './pages/QuizIndex'; 
+import QuizSession from './pages/QuizSession'; 
 import MistakeBook from './pages/MistakeBook';
 
 const App: React.FC = () => {

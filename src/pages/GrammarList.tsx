@@ -1,5 +1,5 @@
 
-/* FrenchMaster GrammarList - Fixed Import */
+/* Fix: 2025-12-14 06:10 - Correct Import */
 import React, { useState } from 'react';
 import { Level } from '../types';
 import { GRAMMAR_DATA } from '../data/grammar';

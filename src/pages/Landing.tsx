@@ -1,5 +1,5 @@
 
-/* FrenchMaster Landing Page - v16.0 */
+/* Fix: 2025-12-14 06:10 - Landing Page */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Book, MessageCircle, GraduationCap, BookOpen } from 'lucide-react';

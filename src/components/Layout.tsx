@@ -1,5 +1,5 @@
 
-/* FrenchMaster Layout - Version Update */
+/* Fix: 2025-12-14 06:10 - Layout Version */
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home } from 'lucide-react';
@@ -8,8 +8,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 🚀 v15.8 FINAL FORCE - Standardized all data files
-const DEPLOY_VERSION = "v15.8-FORCE-UPDATE"; 
+const DEPLOY_VERSION = "v16.1-NEW-FILES"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();

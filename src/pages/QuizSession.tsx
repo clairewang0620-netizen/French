@@ -1,5 +1,5 @@
 
-/* FrenchMaster Quiz Session - v16.0 */
+/* Fix: 2025-12-14 06:10 - Quiz Session */
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { QUIZ_DATA } from '../data/quizzes';

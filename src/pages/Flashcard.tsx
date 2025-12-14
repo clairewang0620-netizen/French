@@ -1,5 +1,5 @@
 
-/* FrenchMaster Flashcard - Fixed Import */
+/* Fix: 2025-12-14 06:10 - Correct Import */
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { VOCABULARY_DATA } from '../data/vocabulary';

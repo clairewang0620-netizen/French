@@ -1,5 +1,5 @@
 
-/* FrenchMaster PhrasesList - Fixed Import */
+/* Fix: 2025-12-14 06:10 - Correct Import */
 import React from 'react';
 import AudioButton from '../components/AudioButton';
 import { PHRASES_DATA } from '../data/phrases';
