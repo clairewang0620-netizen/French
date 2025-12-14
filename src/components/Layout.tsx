@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home } from 'lucide-react';
@@ -5,6 +6,10 @@ import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, H
 interface LayoutProps {
   children: React.ReactNode;
 }
+
+// 每次部署时修改这里的日期，或者构建时会自动更新，
+// 但为了确保你能看到变化，我们先硬编码一个显眼的版本号
+const DEPLOY_VERSION = "2025.01.16 - V5.0 (Force Update)";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
@@ -75,7 +80,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-6 text-center text-sm">
-        <p>© 2024 法语大师 FrenchMaster. 助你轻松学法语。</p>
+        <p>© 2024 法语大师 FrenchMaster.</p>
+        <p className="text-xs text-gray-600 mt-1">Build: {DEPLOY_VERSION}</p>
       </footer>
     </div>
   );
