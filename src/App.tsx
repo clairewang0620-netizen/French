@@ -6,7 +6,7 @@ import Layout from './components/Layout';
 import { VocabularyProvider } from './contexts/VocabularyContext';
 
 // Pages
-import Home from './pages/Home';
+import HomePage from './pages/HomePage'; // Renamed to fix build casing issue
 import VocabularyList from './pages/VocabularyList';
 import Flashcard from './pages/Flashcard';
 import GrammarList from './pages/GrammarList';
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <HashRouter>
           <Layout>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<HomePage />} />
               
               {/* Vocabulary */}
               <Route path="/vocabulary" element={<VocabularyList />} />
