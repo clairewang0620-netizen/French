@@ -1,0 +1,142 @@
+{
+  "A1": [
+    {
+      "id": "g_a1_etre",
+      "topic": "动词 Être (是)",
+      "subtopic": "现在时变位 (Présent)",
+      "content": [
+        { "subject": "Je", "conjugation": "suis", "example_fr": "Je suis étudiant.", "example_zh": "我是学生。" },
+        { "subject": "Tu", "conjugation": "es", "example_fr": "Tu es chinois.", "example_zh": "你是中国人。" },
+        { "subject": "Il/Elle", "conjugation": "est", "example_fr": "Il est français.", "example_zh": "他是法国人。" },
+        { "subject": "Nous", "conjugation": "sommes", "example_fr": "Nous sommes amis.", "example_zh": "我们是朋友。" },
+        { "subject": "Vous", "conjugation": "êtes", "example_fr": "Vous êtes professeur.", "example_zh": "你们是老师。" },
+        { "subject": "Ils/Elles", "conjugation": "sont", "example_fr": "Elles sont étudiantes.", "example_zh": "她们是学生。" }
+      ]
+    },
+    {
+      "id": "g_a1_avoir",
+      "topic": "动词 Avoir (有)",
+      "subtopic": "现在时变位 (Présent)",
+      "content": [
+        { "subject": "J'", "conjugation": "ai", "example_fr": "J'ai un livre.", "example_zh": "我有一本书。" },
+        { "subject": "Tu", "conjugation": "as", "example_fr": "Tu as une sœur.", "example_zh": "你有一个姐姐。" },
+        { "subject": "Il/Elle", "conjugation": "a", "example_fr": "Elle a 20 ans.", "example_zh": "她20岁。" },
+        { "subject": "Nous", "conjugation": "avons", "example_fr": "Nous avons du temps.", "example_zh": "我们有时间。" },
+        { "subject": "Vous", "conjugation": "avez", "example_fr": "Vous avez raison.", "example_zh": "你们是对的。" },
+        { "subject": "Ils/Elles", "conjugation": "ont", "example_fr": "Ils ont une voiture.", "example_zh": "他们有一辆车。" }
+      ]
+    },
+    {
+      "id": "g_a1_articles",
+      "topic": "冠词 (Articles)",
+      "subtopic": "基础用法",
+      "content": [
+        { "subject": "定冠词", "conjugation": "le / la / les", "example_fr": "Le livre est sur la table.", "example_zh": "书在桌子上。" },
+        { "subject": "不定冠词", "conjugation": "un / une / des", "example_fr": "J'ai une pomme.", "example_zh": "我有一个苹果。" }
+      ]
+    },
+    {
+      "id": "g_a1_structure",
+      "topic": "基本句型",
+      "subtopic": "陈述句结构",
+      "content": [
+        { "subject": "结构", "conjugation": "主语 + 动词 + 宾语", "example_fr": "Je mange du pain.", "example_zh": "我吃面包。" }
+      ]
+    }
+  ],
+  "A2": [
+    {
+      "id": "g_a2_pc",
+      "topic": "复合过去时 (Passé Composé)",
+      "subtopic": "助动词 Avoir",
+      "content": [
+        { "subject": "J'", "conjugation": "ai mangé", "rule": "Avoir + 过去分词", "example_fr": "J'ai mangé une pomme.", "example_zh": "我吃了一个苹果。" },
+        { "subject": "Tu", "conjugation": "as fini", "example_fr": "Tu as fini tes devoirs ?", "example_zh": "你做完作业了吗？" },
+        { "subject": "Il", "conjugation": "a regardé", "example_fr": "Il a regardé la télé.", "example_zh": "他看了电视。" },
+        { "subject": "Nous", "conjugation": "avons acheté", "example_fr": "Nous avons acheté du pain.", "example_zh": "我们买了面包。" }
+      ]
+    },
+    {
+      "id": "g_a2_aller",
+      "topic": "动词 Aller (去)",
+      "subtopic": "现在时变位",
+      "content": [
+        { "subject": "Je", "conjugation": "vais", "example_fr": "Je vais au cinéma.", "example_zh": "我去电影院。" },
+        { "subject": "Tu", "conjugation": "vas", "example_fr": "Tu vas bien ?", "example_zh": "你好吗？" },
+        { "subject": "Il/Elle", "conjugation": "va", "example_fr": "Il va à l'école.", "example_zh": "他去学校。" },
+        { "subject": "Nous", "conjugation": "allons", "example_fr": "Nous allons manger.", "example_zh": "我们要去吃饭。" },
+        { "subject": "Vous", "conjugation": "allez", "example_fr": "Où allez-vous ?", "example_zh": "您去哪里？" },
+        { "subject": "Ils/Elles", "conjugation": "vont", "example_fr": "Ils vont partir.", "example_zh": "他们要走了。" }
+      ]
+    },
+    {
+      "id": "g_a2_futur",
+      "topic": "简单将来时 (Futur Simple)",
+      "subtopic": "常用动词",
+      "content": [
+        { "subject": "Je (Parler)", "conjugation": "parlerai", "example_fr": "Je parlerai à mon chef.", "example_zh": "我会和我的老板谈谈。" },
+        { "subject": "Tu (Finir)", "conjugation": "finiras", "example_fr": "Tu finiras plus tard.", "example_zh": "你会晚点做完。" },
+        { "subject": "Il (Être)", "conjugation": "sera", "example_fr": "Il sera content.", "example_zh": "他会很高兴。" }
+      ]
+    }
+  ],
+  "B1": [
+    {
+      "id": "g_b1_imparfait",
+      "topic": "未完成过去时 (Imparfait)",
+      "subtopic": "描述习惯或状态",
+      "content": [
+        { "subject": "Je", "conjugation": "étais", "example_fr": "Quand j'étais petit, je jouais au foot.", "example_zh": "我小时候踢足球。" },
+        { "subject": "Il", "conjugation": "faisait", "example_fr": "Il faisait beau hier.", "example_zh": "昨天天气很好。" }
+      ]
+    },
+    {
+      "id": "g_b1_conditionnel",
+      "topic": "条件式现在时 (Conditionnel)",
+      "subtopic": "表示礼貌",
+      "content": [
+        { "subject": "Je (Vouloir)", "conjugation": "voudrais", "example_fr": "Je voudrais un café, s'il vous plaît.", "example_zh": "我想要一杯咖啡。" },
+        { "subject": "Tu (Pouvoir)", "conjugation": "pourrais", "example_fr": "Tu pourrais m'aider ?", "example_zh": "你能帮我吗？" }
+      ]
+    }
+  ],
+  "B2": [
+    {
+      "id": "g_b2_subjonctif",
+      "topic": "虚拟式现在时 (Subjonctif)",
+      "subtopic": "必要性与愿望",
+      "content": [
+        { "subject": "Il faut que je (Être)", "conjugation": "sois", "example_fr": "Il faut que je sois prêt.", "example_zh": "我必须准备好。" },
+        { "subject": "Il faut que tu (Avoir)", "conjugation": "aies", "example_fr": "Je veux que tu aies confiance.", "example_zh": "我想让你有信心。" }
+      ]
+    },
+    {
+      "id": "g_b2_connecteurs",
+      "topic": "逻辑连接词",
+      "subtopic": "表达对立",
+      "content": [
+        { "subject": "Cependant", "conjugation": "然而", "example_fr": "Il est riche, cependant il n'est pas heureux.", "example_zh": "他很有钱，然而他并不快乐。" },
+        { "subject": "Bien que", "conjugation": "虽然 (+虚拟式)", "example_fr": "Bien qu'il soit malade, il travaille.", "example_zh": "虽然他病了，但他还在工作。" }
+      ]
+    }
+  ],
+  "C1": [
+    {
+      "id": "g_c1_subjonctif_passe",
+      "topic": "虚拟式过去时",
+      "subtopic": "过去的主观动作",
+      "content": [
+        { "subject": "Je", "conjugation": "aie fini", "example_fr": "Je suis content que tu aies fini.", "example_zh": "我很高兴你做完了。" }
+      ]
+    },
+    {
+      "id": "g_c1_passe_simple",
+      "topic": "简单过去时 (Passé Simple)",
+      "subtopic": "文学书面语",
+      "content": [
+        { "subject": "Il (Être)", "conjugation": "fut", "example_fr": "Il fut un grand roi.", "example_zh": "他曾是一位伟大的国王。" },
+        { "subject": "Ils (Parler)", "conjugation": "parlèrent", "example_fr": "Ils parlèrent toute la nuit.", "example_zh": "他们谈了一整夜。" }
+      ]
+    }
+  ]
+}

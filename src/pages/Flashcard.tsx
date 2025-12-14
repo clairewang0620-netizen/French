@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import { useVocabulary } from '../contexts/VocabularyContext';
 
 const Flashcard: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
   const navigate = useNavigate();
   const { words, loading } = useVocabulary();
   

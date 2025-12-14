@@ -1,0 +1,123 @@
+import { Phrase } from '../types';
+
+export const PHRASES_DATA: Phrase[] = [
+  // --- 1. 问候与基础 (Greetings & Basics) ---
+  { id: 'p1', french: "Bonjour, comment ça va ?", ipa: "[bɔ̃.ʒuʁ kɔ.mɑ̃ sa va]", chinese: "你好，最近好吗？" },
+  { id: 'p2', french: "Ça va bien, merci.", ipa: "[sa va bjɛ̃ mɛʁ.si]", chinese: "很好，谢谢。" },
+  { id: 'p3', french: "Enchanté de faire votre connaissance.", ipa: "[ɑ̃.ʃɑ̃.te də fɛʁ vɔtʁ kɔ.nɛ.sɑ̃s]", chinese: "很高兴认识您。" },
+  { id: 'p4', french: "Je m'appelle Thomas.", ipa: "[ʒə ma.pɛl tɔ.ma]", chinese: "我叫托马斯。" },
+  { id: 'p5', french: "Bonne journée !", ipa: "[bɔn ʒuʁ.ne]", chinese: "祝你一天愉快！" },
+  { id: 'p6', french: "Bonsoir.", ipa: "[bɔ̃.swaʁ]", chinese: "晚上好。" },
+  { id: 'p7', french: "Bonne nuit.", ipa: "[bɔn nɥi]", chinese: "晚安。" },
+  { id: 'p8', french: "À demain.", ipa: "[a də.mɛ̃]", chinese: "明天见。" },
+  { id: 'p9', french: "Au revoir.", ipa: "[o ʁə.vwaʁ]", chinese: "再见。" },
+  { id: 'p10', french: "S'il vous plaît.", ipa: "[sil vu plɛ]", chinese: "请 / 劳驾。" },
+
+  // --- 2. 沟通障碍 (Communication) ---
+  { id: 'p11', french: "Je ne comprends pas.", ipa: "[ʒə nə kɔ̃.pʁɑ̃ pa]", chinese: "我不明白。" },
+  { id: 'p12', french: "Pouvez-vous répéter ?", ipa: "[pu.ve vu ʁe.pe.te]", chinese: "您能重复一遍吗？" },
+  { id: 'p13', french: "Parlez plus lentement, s'il vous plaît.", ipa: "[paʁ.le ply lɑ̃t.mɑ̃ sil vu plɛ]", chinese: "请说慢一点。" },
+  { id: 'p14', french: "Je parle un peu français.", ipa: "[ʒə paʁl œ̃ pø fʁɑ̃.sɛ]", chinese: "我会说一点法语。" },
+  { id: 'p15', french: "Parlez-vous anglais ?", ipa: "[paʁ.le vu ɑ̃.ɡlɛ]", chinese: "您说英语吗？" },
+  { id: 'p16', french: "Comment dit-on ça en français ?", ipa: "[kɔ.mɑ̃ di tɔ̃ sa ɑ̃ fʁɑ̃.sɛ]", chinese: "这个用法语怎么说？" },
+  { id: 'p17', french: "Je ne sais pas.", ipa: "[ʒə nə sɛ pa]", chinese: "我不知道。" },
+  { id: 'p18', french: "D'accord.", ipa: "[da.kɔʁ]", chinese: "好的 / 同意。" },
+  { id: 'p19', french: "Excusez-moi.", ipa: "[ɛks.ky.ze mwa]", chinese: "借过 / 打扰一下。" },
+  { id: 'p20', french: "Je suis désolé.", ipa: "[ʒə sɥi de.zɔ.le]", chinese: "我很抱歉。" },
+
+  // --- 3. 个人信息 (Personal Info) ---
+  { id: 'p21', french: "Je suis chinois.", ipa: "[ʒə sɥi ʃi.nwa]", chinese: "我是中国人。" },
+  { id: 'p22', french: "Je viens de Pékin.", ipa: "[ʒə vjɛ̃ də pe.kɛ̃]", chinese: "我来自北京。" },
+  { id: 'p23', french: "J'habite à Paris.", ipa: "[ʒa.bit a pa.ʁi]", chinese: "我住在巴黎。" },
+  { id: 'p24', french: "Je suis étudiant.", ipa: "[ʒə sɥi e.ty.djɑ̃]", chinese: "我是学生。" },
+  { id: 'p25', french: "Je suis ici pour le travail.", ipa: "[ʒə sɥi i.si puʁ lə tʁa.vaj]", chinese: "我来这里工作。" },
+  { id: 'p26', french: "Je suis ici en vacances.", ipa: "[ʒə sɥi i.si ɑ̃ va.kɑ̃s]", chinese: "我来这里度假。" },
+  { id: 'p27', french: "J'ai vingt-cinq ans.", ipa: "[ʒe vɛ̃t sɛ̃k ɑ̃]", chinese: "我二十五岁。" },
+  { id: 'p28', french: "J'aime beaucoup la France.", ipa: "[ʒɛm bo.ku la fʁɑ̃s]", chinese: "我很喜欢法国。" },
+  { id: 'p29', french: "C'est mon premier voyage ici.", ipa: "[sɛ mɔ̃ pʁə.mje vwa.jaʒ i.si]", chinese: "这是我第一次来这里。" },
+  { id: 'p30', french: "Je voyage seul.", ipa: "[ʒə vwa.jaʒ sœl]", chinese: "我独自旅行。" },
+
+  // --- 4. 问路与方位 (Directions) ---
+  { id: 'p31', french: "Où sont les toilettes ?", ipa: "[u sɔ̃ le twa.lɛt]", chinese: "洗手间在哪里？" },
+  { id: 'p32', french: "Je cherche la gare.", ipa: "[ʒə ʃɛʁʃ la ɡaʁ]", chinese: "我在找火车站。" },
+  { id: 'p33', french: "C'est loin d'ici ?", ipa: "[sɛ lwɛ̃ di.si]", chinese: "离这儿远吗？" },
+  { id: 'p34', french: "Allez tout droit.", ipa: "[a.le tu dʁwa]", chinese: "直走。" },
+  { id: 'p35', french: "Tournez à gauche.", ipa: "[tuʁ.ne a ɡoʃ]", chinese: "左转。" },
+  { id: 'p36', french: "Tournez à droite.", ipa: "[tuʁ.ne a dʁwat]", chinese: "右转。" },
+  { id: 'p37', french: "C'est à côté de la banque.", ipa: "[sɛ a ko.te də la bɑ̃k]", chinese: "在银行旁边。" },
+  { id: 'p38', french: "Où est le métro ?", ipa: "[u ɛ lə me.tʁo]", chinese: "地铁在哪里？" },
+  { id: 'p39', french: "Montrez-moi sur la carte.", ipa: "[mɔ̃.tʁe mwa syʁ la kaʁt]", chinese: "请在地图上指给我看。" },
+  { id: 'p40', french: "Je suis perdu.", ipa: "[ʒə sɥi pɛʁ.dy]", chinese: "我迷路了。" },
+
+  // --- 5. 交通出行 (Transportation) ---
+  { id: 'p41', french: "Un billet pour Lyon, s'il vous plaît.", ipa: "[œ̃ bi.jɛ puʁ ljɔ̃ sil vu plɛ]", chinese: "请给我一张去里昂的票。" },
+  { id: 'p42', french: "Combien coûte le billet ?", ipa: "[kɔ̃.bjɛ̃ kut lə bi.jɛ]", chinese: "票价多少？" },
+  { id: 'p43', french: "À quelle heure part le train ?", ipa: "[a kɛl œʁ paʁ lə tʁɛ̃]", chinese: "火车几点出发？" },
+  { id: 'p44', french: "Quel quai ?", ipa: "[kɛl ke]", chinese: "哪个站台？" },
+  { id: 'p45', french: "Je voudrais un taxi.", ipa: "[ʒə vu.dʁɛ œ̃ tak.si]", chinese: "我想要一辆出租车。" },
+  { id: 'p46', french: "Emmenez-moi à l'aéroport.", ipa: "[ɑ̃.mə.ne mwa a la.e.ʁɔ.pɔʁ]", chinese: "送我去机场。" },
+  { id: 'p47', french: "Arrêtez-vous ici, s'il vous plaît.", ipa: "[a.ʁɛ.te vu i.si sil vu plɛ]", chinese: "请在这里停下。" },
+  { id: 'p48', french: "C'est direct ?", ipa: "[sɛ di.ʁɛkt]", chinese: "是直达吗？" },
+  { id: 'p49', french: "Je descends à la prochaine.", ipa: "[ʒə de.sɑ̃ a la pʁɔ.ʃɛn]", chinese: "我在下一站下车。" },
+  { id: 'p50', french: "Où est l'arrêt de bus ?", ipa: "[u ɛ la.ʁɛ də bys]", chinese: "公交车站在哪里？" },
+
+  // --- 6. 住宿 (Accommodation) ---
+  { id: 'p51', french: "J'ai une réservation.", ipa: "[ʒe yn ʁe.zɛʁ.va.sjɔ̃]", chinese: "我有预订。" },
+  { id: 'p52', french: "Je voudrais une chambre.", ipa: "[ʒə vu.dʁɛ yn ʃɑ̃bʁ]", chinese: "我想要一个房间。" },
+  { id: 'p53', french: "Le petit-déjeuner est inclus ?", ipa: "[lə pə.ti de.ʒœ.ne ɛ t‿ɛ̃.kly]", chinese: "包含早餐吗？" },
+  { id: 'p54', french: "À quelle heure est le check-out ?", ipa: "[a kɛl œʁ ɛ lə tʃɛk ut]", chinese: "几点退房？" },
+  { id: 'p55', french: "Le wifi ne marche pas.", ipa: "[lə wi.fi nə maʁʃ pa]", chinese: "Wifi 坏了。" },
+  { id: 'p56', french: "Avez-vous une chambre calme ?", ipa: "[a.ve vu yn ʃɑ̃bʁ kalm]", chinese: "有安静一点的房间吗？" },
+  { id: 'p57', french: "Pouvez-vous appeler un taxi ?", ipa: "[pu.ve vu a.pə.le œ̃ tak.si]", chinese: "您能帮我叫辆出租车吗？" },
+  { id: 'p58', french: "Voici mon passeport.", ipa: "[vwa.si mɔ̃ pas.pɔʁ]", chinese: "这是我的护照。" },
+  { id: 'p59', french: "Je peux laisser mes bagages ?", ipa: "[ʒə pø le.se me ba.ɡaʒ]", chinese: "我可以寄存行李吗？" },
+  { id: 'p60', french: "Il n'y a pas d'eau chaude.", ipa: "[il nj‿a pa do ʃod]", chinese: "没有热水。" },
+
+  // --- 7. 餐厅与饮食 (Dining) ---
+  { id: 'p61', french: "Une table pour deux, s'il vous plaît.", ipa: "[yn tabl puʁ dø sil vu plɛ]", chinese: "请给我一张两人的桌子。" },
+  { id: 'p62', french: "La carte, s'il vous plaît.", ipa: "[la kaʁt sil vu plɛ]", chinese: "请给我菜单。" },
+  { id: 'p63', french: "Je voudrais de l'eau.", ipa: "[ʒə vu.dʁɛ də lo]", chinese: "我想要水。" },
+  { id: 'p64', french: "Je prendrai le menu.", ipa: "[ʒə pʁɑ̃.dʁe lə mə.ny]", chinese: "我要套餐。" },
+  { id: 'p65', french: "C'est délicieux.", ipa: "[sɛ de.li.sjø]", chinese: "这很美味。" },
+  { id: 'p66', french: "L'addition, s'il vous plaît.", ipa: "[la.di.sjɔ̃ sil vu plɛ]", chinese: "请结账。" },
+  { id: 'p67', french: "Je suis végétarien.", ipa: "[ʒə sɥi ve.ʒe.ta.ʁjɛ̃]", chinese: "我是素食主义者。" },
+  { id: 'p68', french: "Je ne mange pas de porc.", ipa: "[ʒə nə mɑ̃ʒ pa də pɔʁ]", chinese: "我不吃猪肉。" },
+  { id: 'p69', french: "Santé !", ipa: "[sɑ̃.te]", chinese: "干杯！" },
+  { id: 'p70', french: "Bon appétit.", ipa: "[bɔ.na.pe.ti]", chinese: "祝好胃口。" },
+  { id: 'p71', french: "Un café, s'il vous plaît.", ipa: "[œ̃ ka.fe sil vu plɛ]", chinese: "请来一杯咖啡。" },
+  { id: 'p72', french: "C'est trop épicé.", ipa: "[sɛ tʁo e.pi.se]", chinese: "太辣了。" },
+  { id: 'p73', french: "Je peux payer par carte ?", ipa: "[ʒə pø pe.je paʁ kaʁt]", chinese: "我可以刷卡吗？" },
+  { id: 'p74', french: "Gardez la monnaie.", ipa: "[ɡaʁ.de la mɔ.nɛ]", chinese: "不用找了（给小费）。" },
+  { id: 'p75', french: "Où est le restaurant ?", ipa: "[u ɛ lə ʁɛs.tɔ.ʁɑ̃]", chinese: "餐厅在哪里？" },
+
+  // --- 8. 购物与金钱 (Shopping) ---
+  { id: 'p76', french: "Combien ça coûte ?", ipa: "[kɔ̃.bjɛ̃ sa kut]", chinese: "这个多少钱？" },
+  { id: 'p77', french: "C'est trop cher.", ipa: "[sɛ tʁo ʃɛʁ]", chinese: "太贵了。" },
+  { id: 'p78', french: "Vous avez une taille plus grande ?", ipa: "[vu za.ve yn taj ply ɡʁɑ̃d]", chinese: "有大一点的尺码吗？" },
+  { id: 'p79', french: "Je peux essayer ?", ipa: "[ʒə pø e.se.je]", chinese: "我可以试穿吗？" },
+  { id: 'p80', french: "Je vais le prendre.", ipa: "[ʒə ve lə pʁɑ̃dʁ]", chinese: "我要买这个。" },
+  { id: 'p81', french: "Je regarde juste.", ipa: "[ʒə ʁə.ɡaʁd ʒyst]", chinese: "我只是看看。" },
+  { id: 'p82', french: "Avez-vous des soldes ?", ipa: "[a.ve vu de sɔld]", chinese: "有打折吗？" },
+  { id: 'p83', french: "C'est ouvert ?", ipa: "[sɛ u.vɛʁ]", chinese: "开门了吗？" },
+  { id: 'p84', french: "C'est fermé.", ipa: "[sɛ fɛʁ.me]", chinese: "关门了。" },
+  { id: 'p85', french: "Acceptez-vous les espèces ?", ipa: "[ak.sɛp.te vu le z‿ɛs.pɛs]", chinese: "收现金吗？" },
+
+  // --- 9. 紧急情况与健康 (Emergency & Health) ---
+  { id: 'p86', french: "Au secours !", ipa: "[o sə.kuʁ]", chinese: "救命！" },
+  { id: 'p87', french: "Aidez-moi, s'il vous plaît.", ipa: "[ɛ.de mwa sil vu plɛ]", chinese: "请帮帮我。" },
+  { id: 'p88', french: "Appelez la police.", ipa: "[a.ple la pɔ.lis]", chinese: "报警。" },
+  { id: 'p89', french: "J'ai besoin d'un médecin.", ipa: "[ʒe bə.zwɛ̃ dœ̃ mɛt.sɛ̃]", chinese: "我需要医生。" },
+  { id: 'p90', french: "Où est la pharmacie ?", ipa: "[u ɛ la faʁ.ma.si]", chinese: "药店在哪？" },
+  { id: 'p91', french: "J'ai perdu mon passeport.", ipa: "[ʒe pɛʁ.dy mɔ̃ pas.pɔʁ]", chinese: "我丢了护照。" },
+  { id: 'p92', french: "J'ai mal à la tête.", ipa: "[ʒe mal a la tɛt]", chinese: "我头痛。" },
+  { id: 'p93', french: "Je suis malade.", ipa: "[ʒə sɥi ma.lad]", chinese: "我生病了。" },
+  { id: 'p94', french: "J'ai perdu mon sac.", ipa: "[ʒe pɛʁ.dy mɔ̃ sak]", chinese: "我丢了包。" },
+  { id: 'p95', french: "C'est une urgence.", ipa: "[sɛ yn yʁ.ʒɑ̃s]", chinese: "这是紧急情况。" },
+
+  // --- 10. 时间与天气 (Time & Weather) ---
+  { id: 'p96', french: "Quelle heure est-il ?", ipa: "[kɛ.l‿œʁ ɛ.til]", chinese: "几点了？" },
+  { id: 'p97', french: "Il est midi.", ipa: "[il ɛ mi.di]", chinese: "现在是中午。" },
+  { id: 'p98', french: "Il fait beau aujourd'hui.", ipa: "[il fɛ bo o.ʒuʁ.dɥi]", chinese: "今天天气很好。" },
+  { id: 'p99', french: "Il pleut.", ipa: "[il plø]", chinese: "下雨了。" },
+  { id: 'p100', french: "Il fait froid.", ipa: "[il fɛ fʁwa]", chinese: "天气很冷。" }
+];

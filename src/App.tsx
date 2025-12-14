@@ -46,6 +46,7 @@ const App: React.FC = () => {
               {/* Mistakes */}
               <Route path="/mistakes" element={<MistakeBook />} />
 
+              {/* Fallback */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>
