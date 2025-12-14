@@ -7,8 +7,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 🚀 v11.0 FIXED - Import paths corrected
-const DEPLOY_VERSION = "v11.0-FIXED"; 
+// 🚀 v12.0 FIXED - Import paths corrected
+const DEPLOY_VERSION = "v12.0-FINAL"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// FIX: Import from the full dataset, not the _new test file
+// ✅ CRITICAL FIX: Use the full dataset
 import { VOCABULARY_DATA } from '../data/vocabulary';
 import { Level } from '../types';
 import AudioButton from '../components/AudioButton';
