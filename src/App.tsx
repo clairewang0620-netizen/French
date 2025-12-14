@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
-import { MistakeProvider } from './contexts/MistakeContext';
+// import { MistakeProvider } from './contexts/MistakeContext';
 import { VocabularyProvider } from './contexts/VocabularyContext';
 
 // Pages
@@ -18,7 +19,7 @@ import MistakeBook from './pages/MistakeBook';
 
 const App: React.FC = () => {
   return (
-    <MistakeProvider>
+    // <MistakeProvider>
       <VocabularyProvider>
         <HashRouter>
           <Layout>
@@ -46,13 +47,12 @@ const App: React.FC = () => {
               {/* Mistakes */}
               <Route path="/mistakes" element={<MistakeBook />} />
 
-              {/* Fallback */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>
         </HashRouter>
       </VocabularyProvider>
-    </MistakeProvider>
+    // </MistakeProvider>
   );
 };
 
