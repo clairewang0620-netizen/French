@@ -7,8 +7,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// 🚀 v13.0 FIXED - Full Data Verified
-const DEPLOY_VERSION = "v13.0-FIXED"; 
+// 🚀 v14.0 FORCE UPDATE - This MUST appear in the UI
+const DEPLOY_VERSION = "v14.0-FORCE"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
