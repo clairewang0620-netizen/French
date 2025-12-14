@@ -1,20 +1,20 @@
 
-/* FrenchMaster App Entry - Updated Imports */
+/* FrenchMaster App Entry - v16.0 Fix Paths */
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { MistakeProvider } from './contexts/MistakeContext';
 
-// Pages
-import HomePage from './pages/HomePage'; // Using HomePage to avoid case-sensitivity build errors
+// Pages - Renamed to avoid git case sensitivity issues
+import Landing from './pages/Landing'; // Was Home
 import VocabularyList from './pages/VocabularyList';
 import Flashcard from './pages/Flashcard';
 import GrammarList from './pages/GrammarList';
 import PhrasesList from './pages/PhrasesList';
 import ReadingList from './pages/ReadingList';
 import ReadingDetail from './pages/ReadingDetail';
-import QuizList from './pages/QuizList';
-import QuizDetail from './pages/QuizDetail';
+import QuizIndex from './pages/QuizIndex'; // Was QuizList
+import QuizSession from './pages/QuizSession'; // Was QuizDetail
 import MistakeBook from './pages/MistakeBook';
 
 const App: React.FC = () => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <HashRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Landing />} />
             
             {/* Vocabulary */}
             <Route path="/vocabulary" element={<VocabularyList />} />
@@ -40,8 +40,8 @@ const App: React.FC = () => {
             <Route path="/reading/:id" element={<ReadingDetail />} />
             
             {/* Quiz */}
-            <Route path="/quiz" element={<QuizList />} />
-            <Route path="/quiz/:level" element={<QuizDetail />} />
+            <Route path="/quiz" element={<QuizIndex />} />
+            <Route path="/quiz/:level" element={<QuizSession />} />
             
             {/* Mistakes */}
             <Route path="/mistakes" element={<MistakeBook />} />

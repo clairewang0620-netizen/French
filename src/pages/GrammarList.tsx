@@ -1,5 +1,5 @@
 
-/* FrenchMaster GrammarList - Using Standard Data */
+/* FrenchMaster GrammarList - Fixed Import */
 import React, { useState } from 'react';
 import { Level } from '../types';
 import { GRAMMAR_DATA } from '../data/grammar';
