@@ -1,17 +1,14 @@
+
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { VOCABULARY_DATA } from '../data/vocabulary_new';
 import AudioButton from '../components/AudioButton';
 import { ArrowLeft } from 'lucide-react';
-import { useVocabulary } from '../contexts/VocabularyContext';
 
 const Flashcard: React.FC = () => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { words, loading } = useVocabulary();
-  
-  const word = words.find(w => w.id === id);
-
-  if (loading) return <div className="text-center p-10">加载中...</div>;
+  const word = VOCABULARY_DATA.find(w => w.id === id);
 
   if (!word) {
     return <div className="text-center p-10">未找到单词</div>;

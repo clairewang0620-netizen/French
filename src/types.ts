@@ -29,16 +29,16 @@ export interface GrammarContentRow {
 
 export interface GrammarItem {
   id: string;
-  topic: string;
-  subtopic: string;
-  content: GrammarContentRow[];
+  title: string;
+  level: Level;
+  description?: string;
+  rows: GrammarContentRow[];
 }
 
 export interface Phrase {
   id: string;
   french: string;
   chinese: string;
-  ipa?: string; // Added optional IPA field
   category?: string;
 }
 
