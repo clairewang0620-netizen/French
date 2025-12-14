@@ -10,7 +10,7 @@ const PhrasesList: React.FC = () => {
         <div className="flex justify-between items-start">
             <h2 className="text-3xl font-bold text-french-blue mb-2">日常口语精选</h2>
             <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded font-bold">
-              共 {PHRASES_DATA.length} 句 (精选 V15.1)
+              共 {PHRASES_DATA.length} 句
             </span>
         </div>
         <p className="text-gray-600 text-sm">

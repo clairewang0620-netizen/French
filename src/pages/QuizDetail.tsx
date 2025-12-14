@@ -1,14 +1,15 @@
+
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { QUIZ_DATA } from '../data/quizzes';
-import { useMistakes } from '../contexts/MistakeContext';
+// import { useMistakes } from '../contexts/MistakeContext';
 import { Level } from '../types';
 import { ArrowLeft, Check, X } from 'lucide-react';
 
 const QuizDetail: React.FC = () => {
-  const { level } = useParams();
+  const { level } = useParams<{ level: string }>();
   const navigate = useNavigate();
-  const { addMistake } = useMistakes();
+  // const { addMistake } = useMistakes();
 
   // Filter questions for this level
   const questions = QUIZ_DATA.filter(q => q.level === (level as Level));
@@ -39,7 +40,7 @@ const QuizDetail: React.FC = () => {
     if (isCorrect) {
       setScore(s => s + 1);
     } else {
-      addMistake(question);
+      // addMistake(question);
     }
   };
 
@@ -60,7 +61,7 @@ const QuizDetail: React.FC = () => {
         <div className="text-6xl font-bold text-french-blue mb-4">
           {score} <span className="text-2xl text-gray-400">/ {questions.length}</span>
         </div>
-        <p className="text-gray-600">错题已自动加入错题本。</p>
+        <p className="text-gray-600">错题功能暂维护中。</p>
         <button 
           onClick={() => navigate('/quiz')}
           className="bg-french-blue text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 w-full"
