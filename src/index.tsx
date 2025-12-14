@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 // --- Console Identity ---
-console.log('%c French Master v8.0 ', 'background: #0055A4; color: #fff; padding: 4px; border-radius: 4px; font-weight: bold;');
+console.log('%c French Master v13.0 ', 'background: #0055A4; color: #fff; padding: 4px; border-radius: 4px; font-weight: bold;');
 console.log('Build: Fresh Application Deployment');
 
 // 1. 强制注销所有 Service Workers (防止旧缓存干扰新域名，虽然新域名通常没这个问题)

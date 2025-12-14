@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// ✅ CRITICAL FIX: Use the full dataset
 import { VOCABULARY_DATA } from '../data/vocabulary';
 import { Level } from '../types';
 import AudioButton from '../components/AudioButton';
