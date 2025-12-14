@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home, RefreshCw, Zap } from 'lucide-react';
+import { Menu, X, Book, MessageCircle, GraduationCap, AlertTriangle, BookOpen, Home } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-// !!! 部署后请寻找此版本号 !!!
-const DEPLOY_VERSION = "v7.0-FIXED"; 
+// 升级版本号，用于视觉验证
+const DEPLOY_VERSION = "v9.0-FINAL"; 
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
@@ -26,30 +26,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const handleForceRefresh = () => {
-    if (window.confirm("确定要强制刷新吗？这将清除所有缓存。")) {
-      // Unregister Service Worker if any
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for(let registration of registrations) {
-            registration.unregister();
-          }
-        });
-      }
-      localStorage.clear();
-      sessionStorage.clear();
-      // Force reload from server, ignoring cache
-      window.location.href = window.location.href.split('?')[0] + '?t=' + new Date().getTime();
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
       <header className="bg-french-blue text-white shadow-md sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold flex items-center gap-2">
-            🇫🇷 法语大师 <span className="text-xs bg-yellow-400 text-blue-900 px-2 py-0.5 rounded font-bold shadow-sm animate-pulse">{DEPLOY_VERSION}</span>
+            🇫🇷 法语大师 <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded font-bold shadow-sm">{DEPLOY_VERSION}</span>
           </Link>
           
           <button onClick={toggleMenu} className="md:hidden p-2 hover:bg-blue-700 rounded">
@@ -94,21 +77,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
 
-      {/* Footer & Debug Control */}
+      {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-8 text-center text-sm">
         <p>© 2024 法语大师 FrenchMaster.</p>
-        
-        {/* 核弹级刷新按钮 */}
-        <div className="mt-8 mx-auto max-w-xs">
-          <button 
-            onClick={handleForceRefresh}
-            className="w-full flex items-center justify-center gap-2 bg-gray-700 hover:bg-red-600 text-gray-300 hover:text-white py-3 px-4 rounded-lg text-xs font-bold transition-all duration-300 border border-gray-600 hover:border-red-500"
-          >
-            <Zap size={14} className={DEPLOY_VERSION.includes('FIXED') ? 'text-yellow-400' : ''} />
-            强制更新 (若未显示 {DEPLOY_VERSION} 请点此)
-          </button>
-          <p className="text-[10px] text-gray-600 mt-2 font-mono">Build ID: {DEPLOY_VERSION}</p>
-        </div>
+        <p className="text-[10px] text-gray-600 mt-2 font-mono">Current Build: {DEPLOY_VERSION}</p>
       </footer>
     </div>
   );

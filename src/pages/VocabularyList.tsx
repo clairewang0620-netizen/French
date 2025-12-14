@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { VOCABULARY_DATA } from '../data/vocabulary_new';
+// FIX: Point to the full dataset
+import { VOCABULARY_DATA } from '../data/vocabulary';
 import { Level } from '../types';
 import AudioButton from '../components/AudioButton';
 
@@ -13,7 +14,7 @@ const VocabularyList: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-gray-800">单词学习</h2>
+      <h2 className="text-2xl font-bold text-gray-800">单词学习 ({words.length})</h2>
       
       {/* Level Tabs */}
       <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">

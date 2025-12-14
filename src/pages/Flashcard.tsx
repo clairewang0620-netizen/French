@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { VOCABULARY_DATA } from '../data/vocabulary_new';
+// FIX: Point to the full dataset
+import { VOCABULARY_DATA } from '../data/vocabulary';
 import AudioButton from '../components/AudioButton';
 import { ArrowLeft } from 'lucide-react';
 

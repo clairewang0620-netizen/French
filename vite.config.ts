@@ -2,19 +2,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+const timestamp = new Date().getTime();
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    emptyOutDir: true, // 确保清空旧文件
+    emptyOutDir: true,
     rollupOptions: {
       output: {
-        // 强制使用 Hash 文件名
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
+        // 强制文件名包含时间戳，彻底避免 CDN 缓存旧文件
+        entryFileNames: `assets/[name]-[hash]-${timestamp}.js`,
+        chunkFileNames: `assets/[name]-[hash]-${timestamp}.js`,
+        assetFileNames: `assets/[name]-[hash]-${timestamp}.[ext]`,
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom', 'lucide-react'],
         }
